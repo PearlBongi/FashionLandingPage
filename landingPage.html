@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahion Design</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(173, 83, 137),
+          rgb(60, 16, 83)
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #f9ecec;
+        font-size: 35px;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #f0d9da;
+        line-height: 50px;
+        padding: 20px;
+        font-size: 26px;
+        border-radius: 3px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        border-radius: 6px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 20px 0 10px;
+      }
+      .learn-more {
+        display: block;
+        margin: 10px;
+        text-decoration: none;
+        color: #f0d9da;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #f9ecec;
+        color: white;
+        padding: 15px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>I love Fashion</h1>
+      <h2>Welcome to my world</h2>
+      <img src="images./image0.jpeg" />
+      <p>
+        Fashion design is the art of applying design, aesthetics, clothing
+        construction and natural beauty to clothing and its accessories. It is
+        influenced by culture and different trends, and has varied over time and
+        place. "A fashion designer creates clothing, including dresses, suits,
+        pants, and skirts, and accessories like shoes and handbags, for
+        consumers. He or she can specialize in clothing, accessory, or jewelry
+        design, or may work in more than one of these areas."
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Fashion_design"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="order-button">Order your next look</button>
+      <p class="footer">This page was built by Pearl Mapoge</p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let orderDetails = prompt("What would you like to order?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch, meanwhile browse our website"
+        );
+      }
+      let orderButton = document.querySelector(".order-button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
